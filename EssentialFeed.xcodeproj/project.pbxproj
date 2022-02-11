@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540D0BA227B6E9CF00367E33 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D0BA127B6E9CF00367E33 /* RemoteFeedLoader.swift */; };
 		54C7C74527B5E53700DEDE8A /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 54C7C74427B5E53700DEDE8A /* EssentialFeed.docc */; };
 		54C7C74B27B5E53700DEDE8A /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C7C74027B5E53700DEDE8A /* EssentialFeed.framework */; };
 		54C7C75027B5E53700DEDE8A /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C7C74F27B5E53700DEDE8A /* EssentialFeedTests.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		540D0BA127B6E9CF00367E33 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		54C7C74027B5E53700DEDE8A /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C7C74327B5E53700DEDE8A /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		54C7C74427B5E53700DEDE8A /* EssentialFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed.docc; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		540D0BA027B6E9BB00367E33 /* FeedAPI */ = {
+			isa = PBXGroup;
+			children = (
+				540D0BA127B6E9CF00367E33 /* RemoteFeedLoader.swift */,
+			);
+			path = FeedAPI;
+			sourceTree = "<group>";
+		};
 		54C7C73627B5E53600DEDE8A = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		54C7C74227B5E53700DEDE8A /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				540D0BA027B6E9BB00367E33 /* FeedAPI */,
 				54C7C74327B5E53700DEDE8A /* EssentialFeed.h */,
 				54C7C74427B5E53700DEDE8A /* EssentialFeed.docc */,
 				54C7C75E27B5E7CE00DEDE8A /* FeedFeature */,
@@ -211,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540D0BA227B6E9CF00367E33 /* RemoteFeedLoader.swift in Sources */,
 				54C7C75D27B5E65900DEDE8A /* FeedLoader.swift in Sources */,
 				54C7C75B27B5E58C00DEDE8A /* FeedItem.swift in Sources */,
 				54C7C74527B5E53700DEDE8A /* EssentialFeed.docc in Sources */,
