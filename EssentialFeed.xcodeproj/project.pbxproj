@@ -16,6 +16,7 @@
 		54C7C75D27B5E65900DEDE8A /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C7C75C27B5E65900DEDE8A /* FeedLoader.swift */; };
 		54C7C76027B63EBB00DEDE8A /* RemoteFeedLoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C7C75F27B63EBB00DEDE8A /* RemoteFeedLoaderTest.swift */; };
 		54F716F727BB20B30039C046 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F716F627BB20B30039C046 /* HTTPClient.swift */; };
+		54F716F927BB21500039C046 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F716F827BB21500039C046 /* FeedItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		54C7C75C27B5E65900DEDE8A /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		54C7C75F27B63EBB00DEDE8A /* RemoteFeedLoaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTest.swift; sourceTree = "<group>"; };
 		54F716F627BB20B30039C046 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		54F716F827BB21500039C046 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				540D0BA127B6E9CF00367E33 /* RemoteFeedLoader.swift */,
 				54F716F627BB20B30039C046 /* HTTPClient.swift */,
+				54F716F827BB21500039C046 /* FeedItemsMapper.swift */,
 			);
 			path = FeedAPI;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				540D0BA227B6E9CF00367E33 /* RemoteFeedLoader.swift in Sources */,
 				54F716F727BB20B30039C046 /* HTTPClient.swift in Sources */,
 				54C7C75D27B5E65900DEDE8A /* FeedLoader.swift in Sources */,
+				54F716F927BB21500039C046 /* FeedItemsMapper.swift in Sources */,
 				54C7C75B27B5E58C00DEDE8A /* FeedItem.swift in Sources */,
 				54C7C74527B5E53700DEDE8A /* EssentialFeed.docc in Sources */,
 			);
