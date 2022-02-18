@@ -21,7 +21,7 @@ class URLSessionHTTPClient {
         session.dataTask(with: url) { data, response, error in
             if let error = error {
                 completion(.failure(error))
-            } else if let data = data, data.count > 0, let response = response as? HTTPURLResponse{
+            } else if let data = data, let response = response as? HTTPURLResponse{
                 completion(.success(data, response))
             } else {
                 completion(.failure(UnExpectedLavuesRepresentationError()))
@@ -81,6 +81,27 @@ class URLSessionHTTPClientTest: XCTestCase {
     }
     
     func test_getFromUrl_successOnHTTPURLResponseWithData() {
+        let response =  anyHTTPResponse()
+        URLProtocolStub.stub(data: nil, response: response, error: nil)
+        
+        let esp = XCTestExpectation(description: "Wait for completion")
+        
+        let emptyData = Data()
+        makeSUT().get(from: anyUrl()) { result in
+            switch result {
+            case let .success(receivedData, receivedResponse):
+                XCTAssertEqual(receivedData, emptyData)
+                XCTAssertEqual(receivedResponse.url, response.url)
+            default:
+                XCTFail("Expected success, but got \(result) instead")
+            }
+            esp.fulfill()
+        }
+        
+        wait(for: [esp], timeout: 1.0)
+    }
+    
+    func test_getFromUrl_successWithEmptyDataOnHTTPURLResponseWithNilData() {
         let url = anyUrl()
         let data = anyData()
         let response =  anyHTTPResponse()
