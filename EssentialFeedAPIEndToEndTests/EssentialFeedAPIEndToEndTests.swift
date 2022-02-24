@@ -39,7 +39,7 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
         let loader = RemoteFeedLoader(url: testServerUrl, client: client)
         
         trackForMemoryLeak(client, file: file, line: line)
-        trackForMemoryLeak(loader, file: file, line: line)
+        trackForMemoryLeak(loader, file: file, line: line )
         
         var receivedResult: LoadFeedResult?
         
