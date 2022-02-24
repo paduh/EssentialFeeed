@@ -36,7 +36,7 @@ class URLSessionHTTPClientTest: XCTestCase {
         wait(for: [exp], timeout: 1.0)
     }
     
-    func test_getFromURL_failsonRequestErrorp() {
+    func test_getFromURL_failsonRequestError() {
         
         XCTAssertNotNil(resultErrorFor(data: nil, response: nil, error: nil))
         XCTAssertNotNil(resultErrorFor(data: nil, response: nonHTTPResponse(), error: nil))
