@@ -1,5 +1,5 @@
 //
-//  RemoteFeedLoaderTest.swift
+//  LoadFeedFromRemoteUseCaseTests.swift
 //  EssentialFeedTests
 //
 //  Created by Perfect Aduh on 11/02/2022.
@@ -8,7 +8,7 @@
 import XCTest
 import EssentialFeed
 
-class RemoteFeedLoaderTest: XCTestCase {
+class LoadFeedFromRemoteUseCaseTests: XCTestCase {
 
     func test_init_doesNotRequestDataFromUrl() {
         let url = URL(string: "any-url.com")!
