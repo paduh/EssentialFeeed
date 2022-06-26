@@ -1,0 +1,4 @@
+os: osx
+osx_image: xcode10
+language: swift
+script: xcodebuild clean build test -project /Users/perfectaduh/Documents/Learning/EssentialFeed_old/EssentialFeed.xcodeproj -scheme "CI" CODE_SIGN_IDENTITY="" CODE_SIGNING_RREQUIRED=NO
